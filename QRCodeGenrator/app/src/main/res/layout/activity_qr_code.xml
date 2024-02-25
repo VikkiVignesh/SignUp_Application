@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".QrCode">
+
+    <TextView
+        android:id="@+id/noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generated QR Code"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noti"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:fontFamily="monospace"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/res_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="@+id/res_qr"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#2361FF"
+        android:text="Go Back"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#18FB2F"
+        android:layout_marginRight="40dp"
+        android:textFontWeight="900"
+        android:text="Generate"
+        android:textSize="20dp" />
+</RelativeLayout>
